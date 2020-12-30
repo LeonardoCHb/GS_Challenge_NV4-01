@@ -30,7 +30,7 @@ export default class CreateOrders1609248728798 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-
+      await queryRunner.dropTable('products')
     }
 
 }
